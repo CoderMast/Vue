@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入 Vue 资源 -->
+    <script src="../js/vue.min.js"></script>
+</head>
+
+<body>
+    <div id="demo">
+        <h2> hello，world！</h2>
+        <h2> {{ user }} ---- {{ password }} </h2>
+    </div>
+</body>
+<script>
+    // 设置Vue不提示生产环境提醒
+    Vue.config.productionTip = false
+    var a = new Vue({
+        el: '#demo',
+        data: {
+            user: 'codermast',
+            password: 'password'
+        }
+    });
+
+    console.log(a)
+</script>
+
+</html>
